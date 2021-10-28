@@ -76,3 +76,39 @@ function checkAAndB(a, b) {
 
 }
 
+//You're in the midst of creating a typing game.
+
+// Create a function that takes in two arrays: the array of user-typed words, and the array of correctly-typed words 
+//and outputs an array containing 1s (correctly-typed words) and -1s (incorrectly-typed words).//
+//OUTPUT: 1 for correctly typed words, -1 for incorrectly typed words'
+
+function checkSpelling(userArray, correctArray) {
+
+    for (let i = 0; i < userArray.length; i++) {
+        let result = [];
+        if (userArray[i] == correctArray[i]) {
+            result.push(1)
+        }//end if check
+        else {
+            result.push(-1)
+        }//end else
+    }//end for loop
+    return result;
+}
+
+//Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+
+function checkTheArgs(prob, prize, pay) {
+    if (prob * prize > pay) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//Create a function that takes a boolean variable flag and returns it as a string.
+
+function returnAsString( flag ){
+    let string = flag.toString();
+    return string;
+}
