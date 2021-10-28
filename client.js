@@ -112,3 +112,27 @@ function returnAsString( flag ){
     let string = flag.toString();
     return string;
 }
+
+// Create a function that takes a string and returns the concatenated first and last character.
+
+function concatenateLetter ( string ) {
+    let concatenation = string[0] + string[string.length -1];
+    return concatenation;
+}
+
+//You are counting points for a basketball game, given the amount of 2-pointers 
+//scored and 3-pointers scored, find the final points for the team and return that value.
+
+function calculatePoints ( twoPointers, threePointers) {
+    let score = twoPointers * 2 + threePointers * 3;
+    return score;
+}
+
+//Write a function that takes two integers (hours, minutes), converts them to seconds, and adds them.
+
+function convertToSeconds( hours, minutes ) {
+    let conversionofHours = hours * 60 * 60;
+    let conversationOfMinutes = minutes * 60;
+    let totalConversation = conversationOfMinutes + conversionofHours;
+    return totalConversation;
+}
