@@ -149,3 +149,26 @@ function sumTen ( a, b ){
         return false;
     }
 }
+
+//verify the equality of two different values given the parameters a and b
+//both the value AND type need to be equal
+//return true if they are equal, false if not
+
+function equalityCheck(a,b){
+    if( a === b){
+        return true
+    } else if (a == b){
+        return false;
+    } else {
+        return false;
+    }
+}
+
+//Create a function that returns 
+//the number of frames shown in a given number of minutes for a certain FPS
+
+function framesPerSecond (minutes, framesPerSecond ){
+    let framesPerMinute = framesPerSecond * minutes * 60;
+    return framesPerMinute;
+}
+
