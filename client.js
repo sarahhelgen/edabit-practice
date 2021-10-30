@@ -108,29 +108,29 @@ function checkTheArgs(prob, prize, pay) {
 
 //Create a function that takes a boolean variable flag and returns it as a string.
 
-function returnAsString( flag ){
+function returnAsString(flag) {
     let string = flag.toString();
     return string;
 }
 
 // Create a function that takes a string and returns the concatenated first and last character.
 
-function concatenateLetter ( string ) {
-    let concatenation = string[0] + string[string.length -1];
+function concatenateLetter(string) {
+    let concatenation = string[0] + string[string.length - 1];
     return concatenation;
 }
 
 //You are counting points for a basketball game, given the amount of 2-pointers 
 //scored and 3-pointers scored, find the final points for the team and return that value.
 
-function calculatePoints ( twoPointers, threePointers) {
+function calculatePoints(twoPointers, threePointers) {
     let score = twoPointers * 2 + threePointers * 3;
     return score;
 }
 
 //Write a function that takes two integers (hours, minutes), converts them to seconds, and adds them.
 
-function convertToSeconds( hours, minutes ) {
+function convertToSeconds(hours, minutes) {
     let conversionofHours = hours * 60 * 60;
     let conversationOfMinutes = minutes * 60;
     let totalConversation = conversationOfMinutes + conversionofHours;
@@ -140,12 +140,12 @@ function convertToSeconds( hours, minutes ) {
 //Create a function that takes two arguments. Both arguments are 
 //integers, a and b. Return true if one of them is 10 or if their sum is 10.
 
-function sumTen ( a, b ){
-    if (a == 10 || b == 10 ){
+function sumTen(a, b) {
+    if (a == 10 || b == 10) {
         return true;
-    } else if ( a + b == 10){
+    } else if (a + b == 10) {
         return true;
-    } else{
+    } else {
         return false;
     }
 }
@@ -154,10 +154,10 @@ function sumTen ( a, b ){
 //both the value AND type need to be equal
 //return true if they are equal, false if not
 
-function equalityCheck(a,b){
-    if( a === b){
+function equalityCheck(a, b) {
+    if (a === b) {
         return true
-    } else if (a == b){
+    } else if (a == b) {
         return false;
     } else {
         return false;
@@ -167,8 +167,71 @@ function equalityCheck(a,b){
 //Create a function that returns 
 //the number of frames shown in a given number of minutes for a certain FPS
 
-function framesPerSecond (minutes, framesPerSecond ){
+function framesPerSecond(minutes, framesPerSecond) {
     let framesPerMinute = framesPerSecond * minutes * 60;
     return framesPerMinute;
+}
+
+//Create a function that takes a number n and returns the first 10 multiples 
+//of n with 1 added to it, separated by commas.
+
+function multiplesOfTen(n) {
+    let multiples = [];
+    for (let i = 1; i <= 10; i++) {
+        multiples.push((n * i) + 1);
+    }
+    return multiples;
+}
+
+//Create a function that returns true when num1 is equal to num2; 
+//otherwise return false.
+
+function checkEquality(num1, num2) {
+    if (num1 === num2) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+//Create a function that takes two strings as arguments and 
+//return either true or false depending on whether the total number 
+//of characters in the first string is equal to the total number of characters in the second string.
+
+function checkStringEquality(string1, string2) {
+
+    if (string1.length == string2.length) {
+        return true;
+    }
+
+    else {
+        return false;
+    }
+
+}
+
+//Given two arguments, return an array which contains these two arguments.
+
+function makeArray ( string1, string2 ){
+    let newArray = [];
+    newArray.push(string1, string2);
+    return newArray;
+}
+
+//Create a function, that will for a given a, b, c, do the following:
+// Add a to itself b times.
+// Check if the result is divisible by c.
+
+function numberCheck (a,b,c){
+    let numberToCheck = a += b;
+    if (numberToCheck % c == 0){
+        return true
+    }
+    else {
+        return false;
+    }
+
 }
 
